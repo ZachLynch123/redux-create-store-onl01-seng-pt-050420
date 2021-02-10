@@ -15,3 +15,9 @@ function createStore() {
     getState
   };
 };
+
+
+function render() {
+  let container = document.getElementById('container');
+  container.textContent = store.getState().count;
+};
