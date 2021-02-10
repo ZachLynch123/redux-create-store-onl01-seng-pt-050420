@@ -12,6 +12,9 @@ function createStore() {
 };
 }
 
+let store = createStore();
+store.dispatch({type: '@@INIT'})
+
 function reducer(state = { count: 0 }, action) {
   switch (action.type) {
     case 'INCREASE_COUNT':
